@@ -7,6 +7,7 @@ const Switch = ReactRouter.Switch
 const Nav = require('./Nav')
 const Home = require('./Home')
 const Battle = require('./Battle')
+const Results = require('./Results')
 
 class App extends React.Component {
   render() {
