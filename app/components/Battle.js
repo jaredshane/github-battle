@@ -98,9 +98,21 @@ class Battle extends React.Component {
       return newState
     })
   }
+
+  handleReset(id) {
+    this.setState( () => {
+      let newState = {}
+      newState[id + 'Name'] = ''
+      newState[id + 'Image'] = null
+      return newState
+    })
+  }
   render() {
+    let match = this.props.match
     let playerOneName = this.state.playerOneName
     let playerTwoName = this.state.playerTwoName
+    let playerOneImage = this.state.playerOneImage
+    let playerTwoImage = this.state.playerTwoImage
     return (
       <div>
         <div className='row'>
