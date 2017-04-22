@@ -87,6 +87,7 @@ class Battle extends React.Component {
       playerTwoImage: null
     }
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleReset = this.handleReset.bind(this)
   }
 
   handleSubmit(id, username) {
