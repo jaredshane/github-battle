@@ -67,4 +67,3 @@ module.exports.battle = (players) => {
     .then(sortPlayers)
     .catch(handleError)
 }
-}
