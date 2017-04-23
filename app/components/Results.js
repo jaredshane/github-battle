@@ -4,6 +4,7 @@ const { battle } = require('../utils/api')
 const { Link } = require('react-router-dom')
 const PropTypes = require('prop-types')
 const PlayerPreview = require('./PlayerPreview')
+const Loading = require('./Loading')
 
 let Profile = (props) => {
   let info = props.info
