@@ -1,6 +1,7 @@
 const React = require('react')
 const PropTypes = require('prop-types')
 const api = require('../utils/api')
+const Loading = require('./Loading')
 
 
 //stateless functional component
