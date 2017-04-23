@@ -1,4 +1,7 @@
 const axios = require('axios')
+const { clientId, secret } = require('../github-tokens')
+
+let params = `?client_id=${clientId}&client_secret=${secret}`
 
 
 module.exports.fetchPopularRepos = (language) => {
