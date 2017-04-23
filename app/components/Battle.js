@@ -106,10 +106,9 @@ class Battle extends React.Component {
           {playerOneImage !== null  &&
             <PlayerPreview
               avatar={playerOneImage}
-              username={playerOneName}
-              onReset={this.handleReset}
-              id='playerOne'
-            />}
+              username={playerOneName}>
+              <button className='reset' onClick={this.handleReset.bind(null, 'playerOne')}> Reset </button>
+            </PlayerPreview>}
 
           {!playerTwoName &&
             <PlayerInput
